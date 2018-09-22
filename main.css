@@ -11,11 +11,15 @@
    ========================================================================== */
 
 html {
-    color: #222;
+    color: rgb(221, 218, 40);
     font-size: 1em;
     line-height: 1.4;
+    background-color: rgb(255, 255, 255);
 }
 
+body {
+    background-color: rgb(105, 6, 6);
+}
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -25,6 +29,15 @@ html {
  *
  * Customize the background color to match your design.
  */
+header {
+    
+}
+
+h2 {
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+}
 
 ::-moz-selection {
     background: #b3d4fc;
@@ -96,10 +109,31 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+  footer {
+      background-color: rgb(0, 0, 0);
+      text-align: center;
+  }
 
+  h1 {
+      background-color: rgb(0, 0, 0);
+      padding: 1px;
+  }
+ 
+ nav {
+     float: right;
+     text-decoration: none;
+     color: rgb(221, 218, 40);
+ }
 
+ nav.hover {
+     text-decoration: underline;
+     color: rgb(221, 218, 40);
+ }
 
-
+ nav.active {
+     text-decoration: underline;
+     color: rgb(221, 218, 40);
+ }
 
 
 
