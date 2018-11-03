@@ -10,16 +10,7 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
-    color: rgb(221, 218, 40);
-    font-size: 1em;
-    line-height: 1.4;
-    background-color: rgb(255, 255, 255);
-}
 
-body {
-    background-color: rgb(105, 6, 6);
-}
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -29,9 +20,6 @@ body {
  *
  * Customize the background color to match your design.
  */
-header {
-    
-}
 
 h2 {
     text-align: center;
@@ -109,7 +97,29 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-  footer {
+   html {
+    color: rgb(221, 218, 40);
+    font-size: 1em;
+    line-height: 1.4;
+    background-color: rgb(255, 255, 255);
+}
+
+body {
+    /* Instagram */
+
+    /* background: #833ab4; 
+background: -webkit-linear-gradient(to bottom, #fcb045, #fd1d1d, #833ab4);  
+background: linear-gradient(to bottom, #fcb045, #fd1d1d, #833ab4);  */
+
+/* Blue & Purple */
+
+background: #B993D6;  
+background: -webkit-linear-gradient(to bottom, #8CA6DB, #B993D6);  
+background: linear-gradient(to bottom, #8CA6DB, #B993D6); 
+
+}
+  
+   footer {
       background-color: rgb(0, 0, 0);
       text-align: center;
   }
@@ -118,23 +128,48 @@ textarea {
       background-color: rgb(0, 0, 0);
       padding: 1px;
   }
- 
- nav {
-     float: right;
-     text-decoration: none;
-     color: rgb(221, 218, 40);
- }
 
- nav.hover {
-     text-decoration: underline;
-     color: rgb(221, 218, 40);
- }
+  nav.horizontalNavigation {
+      background-color: rgb(0, 0, 0);
+      float: left;
+      display: block;
+      width: 100%;
+  }
 
- nav.active {
-     text-decoration: underline;
-     color: rgb(221, 218, 40);
- }
+  nav.horizontalNavigation ul li {
+      list-style-type: none;
+      display: block;
+      float: left;
+      width: 24%;
+      
+  }
 
+  nav.horizontalNavigation a {
+      text-decoration-line: none;
+      display: block;
+      text-align: center;
+      color: rgb(221, 218, 40);
+  }
+
+body>header>nav.horizontalNavigation a:link,
+body>header>nav.horizontalNavigation a:visited {
+    text-decoration-line: underline;
+}
+
+body>header>nav.horizontalNavigation a:hover,
+body>header>nav.horizontalNavigation a:active {
+    color: rgb(212, 19, 164);
+}
+
+  /* nav:after {
+      display: table;
+      content: "";
+      clear: both;
+  } */
+
+ article {
+     clear: both;
+ }
 
 
 
