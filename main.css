@@ -1,15 +1,8 @@
 /*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
 
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-
 
 /*
  * Remove text-shadow in selection highlight:
@@ -21,12 +14,6 @@
  * Customize the background color to match your design.
  */
 
-h2 {
-    text-align: center;
-    background-color: rgb(0, 0, 0);
-    padding: 10px;
-}
-
 ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
@@ -36,10 +23,6 @@ h2 {
     background: #b3d4fc;
     text-shadow: none;
 }
-
-/*
- * A better looking default horizontal rule
- */
 
 hr {
     display: block;
@@ -65,19 +48,11 @@ video {
     vertical-align: middle;
 }
 
-/*
- * Remove default fieldset styles.
- */
-
 fieldset {
     border: 0;
     margin: 0;
     padding: 0;
 }
-
-/*
- * Allow only vertical resizing of textareas.
- */
 
 textarea {
     resize: vertical;
@@ -101,7 +76,7 @@ textarea {
     color: rgb(221, 218, 40);
     font-size: 1em;
     line-height: 1.4;
-    background-color: rgb(255, 255, 255);
+    background: url(Rain.png) fixed;
 }
 
 body {
@@ -116,21 +91,34 @@ background: linear-gradient(to bottom, #fcb045, #fd1d1d, #833ab4);  */
 background: #B993D6;  
 background: -webkit-linear-gradient(to bottom, #8CA6DB, #B993D6);  
 background: linear-gradient(to bottom, #8CA6DB, #B993D6); 
-
+display: block;
+min-width: 640px;
+max-width: 940px;
+margin-left: auto;
+margin-right: auto;
+box-shadow: rgba(0, 0, 0, 0.61) 10px 10px 25px;
 }
   
    footer {
-      background-color: rgb(0, 0, 0);
+    background: #000000;  
+    background: -webkit-linear-gradient(to top, #434343, #000000);  
+    background: linear-gradient(to top, #434343, #000000); 
       text-align: center;
   }
 
   h1 {
-      background-color: rgb(0, 0, 0);
+    background: #000000;  
+    background: -webkit-linear-gradient(to top, #434343, #000000);  
+    background: linear-gradient(to top, #434343, #000000); 
+    
       padding: 1px;
+      text-align: center;
   }
 
   nav.horizontalNavigation {
-      background-color: rgb(0, 0, 0);
+    background: #000000;  
+    background: -webkit-linear-gradient(to bottom, #434343, #000000);  
+    background: linear-gradient(to bottom, #434343, #000000);  
       float: left;
       display: block;
       width: 100%;
@@ -161,17 +149,29 @@ body>header>nav.horizontalNavigation a:active {
     color: rgb(212, 19, 164);
 }
 
-  /* nav:after {
+  nav:after {
       display: table;
       content: "";
       clear: both;
-  } */
+  }
 
  article {
      clear: both;
  }
 
+ h2 {
+    text-align: center;
+    background: #232526;  
+    background: -webkit-linear-gradient(to bottom, #414345, #232526);  
+    background: linear-gradient(to bottom, #414345, #232526); 
+    padding: 10px;
+}
 
+img {
+    margin-left: 173px;
+    margin-right: auto;
+    margin-bottom: 10px
+}
 
 
 
@@ -188,10 +188,6 @@ body>header>nav.horizontalNavigation a:active {
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
 
 .hidden {
     display: none !important;
@@ -215,7 +211,7 @@ body>header>nav.horizontalNavigation a:active {
     padding: 0;
     position: absolute;
     width: 1px;
-    white-space: nowrap; /* 1 */
+    white-space: nowrap; 
 }
 
 /*
@@ -235,30 +231,14 @@ body>header>nav.horizontalNavigation a:active {
     white-space: inherit;
 }
 
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
 .invisible {
     visibility: hidden;
 }
 
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+    content: " "; 
+    display: table; 
 }
 
 .clearfix:after {
@@ -272,14 +252,12 @@ body>header>nav.horizontalNavigation a:active {
    ========================================================================== */
 
 @media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
 }
 
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
        (min-resolution: 1.25dppx),
        (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
 }
 
 /* ==========================================================================
@@ -293,7 +271,7 @@ body>header>nav.horizontalNavigation a:active {
     *:before,
     *:after {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster */
+        color: #000 !important; 
         -webkit-box-shadow: none !important;
         box-shadow: none !important;
         text-shadow: none !important;
@@ -311,11 +289,6 @@ body>header>nav.horizontalNavigation a:active {
     abbr[title]:after {
         content: " (" attr(title) ")";
     }
-
-    /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
 
     a[href^="#"]:after,
     a[href^="javascript:"]:after {
