@@ -97,6 +97,8 @@ max-width: 940px;
 margin-left: auto;
 margin-right: auto;
 box-shadow: rgba(0, 0, 0, 0.61) 10px 10px 25px;
+border: 4px double rgb(0, 0, 0);
+border-radius: 10px;
 }
   
    footer {
@@ -157,6 +159,7 @@ body>header>nav.horizontalNavigation a:active {
 
  article {
      clear: both;
+     text-align: center;
  }
 
  h2 {
@@ -170,7 +173,9 @@ body>header>nav.horizontalNavigation a:active {
 img {
     margin-left: 173px;
     margin-right: auto;
-    margin-bottom: 10px
+    margin-bottom: 20px;
+    margin-top: 1px;
+    box-shadow: rgba(0, 0, 0, 0.61) 10px 10px 25px;
 }
 
 
