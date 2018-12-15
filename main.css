@@ -178,13 +178,40 @@ img {
     box-shadow: rgba(0, 0, 0, 0.61) 10px 10px 25px;
 }
 
+table {
+    border: 5px solid black;
+}
 
+th, td {
+    border: 3px solid black;
+    height: 1.4em;
+    padding: 8px;
+}
 
+th {
+    font-weight: normal;
+}
 
+td {
+    font-size: 0.9em;
+    vertical-align: top;
+}
 
+Col#firstCol {
+    column-width: 24%;
+}
 
+Col.dataCols {
+    column-width: 19%;
+}
 
+thead tr {
+    height: 60px;
+}
 
+h3 {
+    text-shadow: rgba(0, 0, 0, 0.61) 10px 10px 25px;
+}
 
 
 
