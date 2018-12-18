@@ -171,7 +171,7 @@ body>header>nav.horizontalNavigation a:active {
 }
 
 img {
-    margin-left: 173px;
+    margin-left: 174px;
     margin-right: auto;
     margin-bottom: 20px;
     margin-top: 1px;
@@ -211,8 +211,20 @@ thead tr {
 
 h3 {
     text-shadow: rgba(0, 0, 0, 0.61) 10px 10px 25px;
+    text-align: center;
 }
 
+img.extra {
+    margin-left: 90px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+    margin-top: 1px;
+    box-shadow: rgba(0, 0, 0, 0.61) 10px 10px 25px; 
+}
+
+figcaption {
+    text-align: center;
+}
 
 
 
