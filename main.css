@@ -77,6 +77,7 @@ textarea {
     font-size: 1em;
     line-height: 1.4;
     background: url(Rain.png) fixed;
+    background-color: black;
 }
 
 body {
@@ -225,6 +226,25 @@ img.extra {
 figcaption {
     text-align: center;
 }
+
+img.Education {
+    margin-left: 90px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+    margin-top: 1px;
+    box-shadow: rgba(0, 0, 0, 0.61) 10px 10px 25px;
+}
+
+a:hover, a:visited {
+    color: rgb(221, 218, 40);
+}
+
+a:hover, a:active {
+    color: rgb(212, 19, 164);
+}
+
+
+
 
 
 
